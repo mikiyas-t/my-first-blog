@@ -1,0 +1,34 @@
+{% load staticfiles %}
+<html>
+
+    <head>
+        <title>Mik's blog - a django experiment</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href='https://fonts.googleapis.com/css?family=Hind:400,300' rel='stylesheet' type='text/css'>   
+    </head>
+
+    <body>
+        
+        <div class = "page-header">
+            <h1><a href="">Mik's Blog</a></h4>
+            <p>powered by django</p>
+        </div>
+        
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    
+    </body>
+
+
+
+
+</html>
